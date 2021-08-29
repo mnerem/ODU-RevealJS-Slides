@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
-		<title>Astro Course Intro Slides</title>
+		<title>PHYS 232 Course Intro (Fall 2021)</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -32,13 +32,13 @@
                 <!-- Title Slide-->
                 <section>
                     <div class="overl">
-                        <h1>Course Introduction</h1>
+                        <h1>University Physics II</h1>
                     </div>
-                    <a href="https://apod.nasa.gov/apod/ap141031.html" target='_blank' alt="Hello there">
-                        <img src='https://apod.nasa.gov/apod/image/1410/DTHalloween.jpg' width=1000px class="r-frame">
+                    <a href="https://en.wikipedia.org/wiki/Electrostatic_induction#/media/File:Electrostatic_induction.svg" target='_blank' alt="Hello there">
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Electrostatic_induction.svg' width=1000px class="r-frame">
                     </a>
                     <div class="overl">
-                    <h3>PHYS 103: Intro Astronomy</h3>
+                    <h3>Old Dominion University: PHYS 232N</h3>
                     </div>
                 </section>
 
@@ -54,7 +54,7 @@
                                 <table>
                                     <tbody>
                                       <tr>
-                                        <td class="tg-km2t"><b>Instructor HELLO</b>:</td>
+                                        <td class="tg-km2t"><b>Instructor</b>:</td>
                                         <td class="tg-zv4m">Dr. Perry Nerem</td>
                                       </tr>
                                       <tr>
@@ -89,31 +89,6 @@
                     <img class="r-frame" src=./figures/00-course-intro/About-Nerem-Research.svg>
                 </section>
 
-                <!--Required Materials-->
-                <section>
-                    <div class="overl">
-                    <h2>Required Materials</h2>
-                    </div>
-                    <b>Textbook</b>: 
-                        <a href="https://openstax.org/details/books/astronomy" target="_blank">
-                            OpenStax Astronomy
-                            <img class="r-frame"  src="https://openstax.org/images/logo.svg">
-                        </a>
-                    <br>
-                    <b>Homework</b>:
-                        <a href="https://theexpertta.com/" target="_blank">
-                            ExpertTA
-                            <img class="r-frame" src="https://site.theexpertta.com/wp-content/uploads/2014/04/expert_logo_shadow.png">
-                        </a>
-                </section>
-
-                <!--Openstax Iframe-->
-                <section>
-                    <div class="overl"><h2>Textbook: OpenStax Astronomy</h2></div>
-                    <br>
-                    <iframe src="https://openstax.org/books/astronomy/pages/preface" width=1920 height=800></iframe>
-                </section>
-
                 <!--Course Grade-->
                 <section>
                     <div class="overl">
@@ -132,7 +107,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style='border:none'>20% Reading:</td>
+                                        <td style='border:none'>15% Participation:</td>
                                         <td style='border:none'>
                                         <input type=range min=0 max=100 value=100 step=.1 id="Par_Slider"/><span></span><br>
                                         </td>
@@ -162,7 +137,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style='border:none'>15% Final Exam:</td>
+                                        <td style='border:none'>20% Final Exam:</td>
                                         <td style='border:none'>
                                         <input type=range min=0 max=100 value=100 step=.1 id="FE_Slider"/><span></span><br>
                                         </td>
@@ -180,13 +155,14 @@
                                 $$
                                     \begin{align}
                                         \text{Grade}\, = \,& .15*(\text{Lab}) + \, \\
-                                            & .20*(\text{Reading Notes}) + \, \\
+                                            & .15*(\text{Participation}) + \, \\
                                             & .20*(\text{Homework}) + \, \\
                                             & .15*\left(
                                                 \begin{matrix}
-                                                \text{SUM}[T1,T2,T3,FE] \\ -\,\text{MIN}[T1,T2,T3,FE]
+                                                \text{SUM}[T1,T2,T3] \\ -\,\text{MIN}[T1,T2,T3]
                                                 \end{matrix}
-                                                \right)
+                                                \right) + \, \\
+                                            & .20*(\text{Final Exam})
                                     \end{align}
                                 $$
                                 </div>
@@ -220,10 +196,11 @@
                       var fe_grade = +document.getElementById("FE_Slider").value;
 
                       var course_grade = +lab_grade*.15 + 
-                                         +p_grade*.20 + 
+                                         +p_grade*.15 + 
                                          +hw_grade*.20 +
-                                         ((t1_grade + t2_grade + t3_grade + fe_grade) -
-                                          Math.min(t1_grade,t2_grade,t3_grade, fe_grade))*.15
+                                         ((t1_grade + t2_grade + t3_grade) -
+                                          Math.min(t1_grade,t2_grade,t3_grade))*.15 +
+                                         +fe_grade*.20
                                          ;
 
                       CourseGrade.textContent = course_grade.toFixed(2);
@@ -231,78 +208,53 @@
 
                     </script>
                 </section>
-                             
+
+                <!--Text Book-->
+                <section>
+                    <div class="overl"><h2>Textbook</h2></div>
+                    University Physics Edition 15 by Young and Freedman.
+                    <br>
+                    <a href="https://www.pearson.com/us/higher-education/program/Young-Modified-Mastering-Physics-with-Pearson-e-Text-Standalone-Access-Card-for-University-Physics-with-Modern-Physics-15th-Edition/PGM2485469.html" target="_blank">
+                        <img src="./figures/PHYS232/cover.jpg" class="r-frame">
+                    </a>
+                    <br>
+                    Access to E-Text a part of your Mastering Physics on Blackboard.
+                </section>
+
+                
                 <!--Laboratory-->
                 <section>
-                    <section>
-                        <div class="overl">
-                        <h1>Laboratory Sessions</h1>
-                        </div>
+                    <h1 class="overl">Laboratory Sessions</h1>
+                        <a href="https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction#/media/File:Faraday_emf_experiment.svg" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Faraday_emf_experiment.svg" class="r-frame" width=800px>
+                        </a>
                         
-                        <br>
-                        <a href="#/sync-labs" class="r-frame">Synchronous (online)</a>
-                        <p></p>
-                        <br>
-                        <p>
-                        <a href="#/online-labs" class="r-frame">Asynchronous (online)</a>
-                        </p>
-                    </section>
-                    <section id="sync-labs">
-                        <div class="overl">
-                        <h2>Synchronous Labs</h2>
-                        </div>
-                        
-                        <img src="https://www.pilotonline.com/resizer/dtCu4VbhXkqByJ2IEmf7F6eJOl8=/fit-in/800x533/smart/filters:fill(black)/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/2TQCPCKBMZCHVEV56DET5IVTBM.jpg" class="r-frame" width=400px>
-                        
+                    <br>
                         <ul>
                             <li>11 labs this semester</li>
                             <li>You must go to the lab you are register for</li>
                             <li>Lab manual provided through Blackboard</li>
-                            <li>You will need access to
-                                <ul>
-                                    <li>Microsoft Office</li>
-                                    <li>UNL Native App Astronomy Simulations</li>
-                                </ul>
-                            </li>
+                            <li>Contact your lab TA for lab specific questions</li>
                         </ul>
-                    </section>
-                    <section id="online-labs"> <div class="overl"><h2>Online Labs</h2></div>
-                        <ul>
-                            <li>11 labs this semester</li>
-                            <li>Lab manual provided through Blackboard</li>
-                            <li>You will need to install on your computer
-                                <ul>
-                                    <li>Microsoft Office</li>
-                                    <li>UNL Native App Astronomy Simulations</li>
-                                </ul>
-                            </li>
-                            <li>Labs <b>3</b> and <b>6</b> require outdoor observations
-                        </ul>
-                        
-                        <br>
-                        <img class="r-frame" src="./figures/00-course-intro/pretlow-planetarium-constellation.jpeg" width=800px>
-                        <br>
-                        <b>There will be outside night time observations!</b>
-                    </section>
                 </section>
                                 
-                <!--Reading Notes-->
+                <!--Participation-->
                 <section>
-                    <div class="overl"><h3>Reading Notes</h3></div>
+                    <h3 class="overl">Participation</h3>
                     <table>
                         <tr>
                             <td>
                                 <ul>
-                                    <li>Scan and upload copies of your <br> <b>handwritten</b> reading notes</li>
+                                    <li>Every lecture we will split into groups <br> and work problems together</li>
+                                    <li>Scan and upload copies of your <br> <b>handwritten</b> notes</li>
                                     <li>Notes from tablet devices are acceptable</li>
                                     <li>Upload work though Blackboard</li>
                                     <li><b>Files must be PDF documents</b></li>
                                     <li>Minimum one page long and <br> must have your name on it</li>
-                                    <li>Due every other week on Friday nights.</li>
                                 </ul>
                             </td>
                             <td>
-                                <img src="./figures/00-course-intro/RN-sample-1.png" height=950 class="r-frame">
+                                <img src="./figures/PHYS232/00-example-problem-1.png" height=950 class="r-frame">
                             </td>
                         </tr>
                     </table>
@@ -310,7 +262,7 @@
                 
                 <!--Homework-->
                 <section>
-                    <div class="overl"><h1>Homework</h1></div>
+                    <div class="overl"><h2>Homework</h2></div>
                     <table>
                         <tr>
                             <td>
@@ -381,11 +333,12 @@
                             </td>
                             <td>
                                 <ul>
-                                    <li>Delivered through ExpertTa ($\approx$ $35 sign up cost)</li>
-                                    <li>Sign up instructions on Blackboard</li>
+                                    <li>Mastering Physics (found through Blackboard)</li>
+                                    <li>5% penalty per day late (max penalty of 60%)</li>
+                                    <li>Last day to submit any assignment is the last day of lecture</li>
                                 </ul>
-                                <a href="https://apod.nasa.gov/apod/ap020317.html" target="_blank">
-                                    <img class="r-frame" src="https://apod.nasa.gov/apod/image/0008/ngc2244_cfht_big.jpg" width=1000px>
+                                <a href="https://en.wikipedia.org/wiki/Magnetism#/media/File:Electromagnet.gif" target="_blank">
+                                    <img class="r-frame" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Electromagnet.gif" width=800px>
                                 </a>
                             </td>
                         </tr>
@@ -402,8 +355,6 @@
                                     <li>Three test through out the semester and a cumulative final exam.</li>
                                     <li>Your lowest test grade is dropped</li>
                                     <li>No late test will be offered</li>
-                                    <li>Available online for 24 hours</li>
-                                    <li>Use <b>Respondus Lockdown Browser</b></li>
                                 </ul>
                                 <table border="1" class="dataframe">
                                   <thead>
@@ -414,16 +365,16 @@
                                   </thead>
                                   <tbody>
                                     <tr>
-                                      <td>Tue Sep 28</td>
-                                      <td>Test 1 (Ch 1-7)</td>
+                                      <td>Thu Sep 30</td>
+                                      <td>Test 1 (Ch 21–24)</td>
                                     </tr>
                                     <tr>
-                                      <td>Tue Oct 26</td>
-                                      <td>Test 2 (Ch 8-15)</td>
+                                      <td>Thu Nov 4</td>
+                                      <td>Test 2 (Ch 25–28)</td>
                                     </tr>
                                     <tr>
-                                      <td>Tue Nov 23</td>
-                                      <td>Test 3 (Ch 16-25)</td>
+                                      <td>Thu Dec 2</td>
+                                      <td>Test 3 (Ch 29-33)</td>
                                     </tr>
                                     <tr>
                                       <td>Tue Dec 14</td>
@@ -433,8 +384,8 @@
                                 </table>
                             </td>
                             <td>
-                                <a href="https://apod.nasa.gov/apod/ap000823.html" target="_blank">
-                                    <img src="https://apod.nasa.gov/apod/image/0008/witchsbroom_gendler_big.jpg" height=900px class="r-frame">
+                                <a href="https://en.wikipedia.org/wiki/Electric_field#/media/File:Van_de_Graaff_Generator_-_Science_City_-_Calcutta_1997_444.JPG" target="_blank">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Van_de_Graaff_Generator_-_Science_City_-_Calcutta_1997_444.JPG/800px-Van_de_Graaff_Generator_-_Science_City_-_Calcutta_1997_444.JPG" height=600px class="r-frame">
                                 </a>
                             </td>
                         </tr>
@@ -500,25 +451,46 @@
                     </p>
                 </section>
                 
-                <!--Proportionality-->
+                <!--Slopes of Curves-->
                 <section>
-                    <h2 class="overl">Proportionality</h2>
-                    Distance travel is proportional to the time you were traveling
-                    <ul>
-                        <li>Traveling at 60 mph for one hour you’ll cover 60 miles</li>
-                        <li>Traveling at 60 mph for two hours you’ll cover 120 miles</li>
-                    </ul>
+                    <h2 class="overl">Slope of a Curve</h2>
+                    <table>
+                        <tr>
+                            <td width=700px>
+                                Where and how you measure the slope are very important.
+                                <br>
+                                <img src="./figures/PHYS232/slopes.svg" width=700px>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Draw a tangent line <br> (just touches the curve at a point)</li>
+                                    <li>Approximate the slope using a "rise-run" to get the <b>average</b> rate of change
+                                        $$\text{Slope} \approx \frac{\Delta y}{\Delta x}$$
+                                    </li>
+                                    <li>Derivative tells us the <b>instantaneous</b> rate of change
+                                        $$\text{Slope} = \frac{d y}{d x}$$
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                
+                <!--Quadratics: $ax^2+bx+c=0$-->
+                <section>
+                    <h2 class="overl">Quadratics: $ax^2+bx+c=0$</h2>
+                    <img src="./figures/PHYS232/quadratics.svg">
                     <br>
-                    $$d\propto t$$
-                    
-                    <div class="fragment">
-                        Time to travel a distance is inversely proportional to speed
-                        <ul>
-                            <li>Traveling 20 miles at 30 mph takes 40 minutes</li>
-                            <li>Traveling 20 miles at 60 mph takes 20 minutes</li>
-                        </ul>
-                        $$t\propto \dfrac{1}{v}$$
-                    </div>
+                    $$\text{Quadratic Formula: } x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+                    Physics tells us if we use the $+$ or $-$ solution (or complex numbers).
+                </section>
+                
+                <!--Angle geometry-->
+                <section>
+                    <h2 class="overl">Keeping track of angles</h2>
+                    <p class="fragment fade-left">
+                        <img src="./figures/PHYS232/tracking-angles.svg" height=950px>
+                    </p>
                 </section>
                 
                 <!--Circle Geometry-->
@@ -535,7 +507,7 @@
                         <tr>
                             <td>
                                 <br>
-                                <img src="./figures/00-course-intro/Right-Triangle-1.png" width=500px>
+                                <img src="./figures/00-course-intro/Right-Triangle-1.png" width=600px>
                             </td>
                             <td>
                                 \begin{gather*}
@@ -547,39 +519,46 @@
                             </td>
                         </tr>
                     </table>
-                    <br>
                     Pythagoras’ Theorem: $a^2 + b^2 = c^2$
+                    <br>
+                    Angles measured in <b>radians</b>: $2\pi\,$rad=$360^\circ$
                 </section>
                 
-                <!--Log-->
+                <!--Problem solving guide-->
                 <section>
-                    <h2 class="overl">Logarithms</h2>
-                    Logarithm is the inverse of exponentiation
-                    (just as division is the inverse of multiplication)
-                    \begin{equation}
-                        4^x=10 \quad \Rightarrow \quad \log_4(4^x)=\log_4(10)
-                        \quad \Rightarrow \quad
-                        x=\log_4(10)
-                    \end{equation}
-                    Invented by astronomers to make their lives easier.
-                    <br>
-                    
+                    <h2 class="overl">Problem Solving Guide</h2>
                     <table>
                         <tr>
-                            <td width=500px>
-                                Simplify difficult large number calculations and 
-                                reduce wide ranging quantities <br> (log scales)
-                                \begin{align}
-                                    \text{multiplication hard} & \\
-                                    \log(278\cdot316) = & \log(278)+\log(316) \\
-                                    & \text{addition easy}
-                                \end{align}
-                            </td>
                             <td>
-                                <img class="r-frame" src="./figures/00-course-intro/log-plot.svg" width=1000px>
+                                <ul>
+                                    <li>Draw a picture <br>
+                                        <div class="fragment">"Do I use sin or cosine here?"<br></div>
+                                        <div class="fragment">- <b>DRAW A PICTURE!</b></div>
+                                    </li>
+                                    <li class="fragment">Identify givens and <font color="red">unknowns</font></li>
+                                    <li class="fragment">Determine relevant physics.
+                                        <ul class="fragment">
+                                            <li>Kinematics</li>
+                                            <li>Forces</li>
+                                            <li>Energy</li>
+                                            <li>Vector sums</li>
+                                            <li>$\vdots$</li>
+                                        </ul>
+                                    </li>
+                                    <li class="fragment">Solve for <font color="red">unknowns</font> using <font color="blue">variables</font>!</li>
+                                    <li class="fragment">Checks units are consistent</li>
+                                    <li class="fragment">Plug in numerical values</li>
+                                </ul>
+                            </td>
+                            <td width=500px>
+                                <img class="r-frame" src="./figures/PHYS232/gibbon.jpg" width=400px>
+                                <br> A gibbon attempting to solve a physics problem.
                             </td>
                         </tr>
                     </table>
+                    <div class="fragment">
+                        Reflect on your work. Is you answer a reasonable value? Did every step make sense?
+                    </div>
                 </section>
                 
                 <section>
@@ -594,7 +573,6 @@
                                     <li><b>Study the concepts</b></li>
                                     <li><b>READ THE BOOK!</b></li>
                                     <li>Volunteer note-sharing</li>
-                                    <li>Honors astro students talk to instructor after lecture</li>
                                     <li>Always ask questions!</li>
                                 </ul>
                             </td>
@@ -606,7 +584,6 @@
                         </tr>
                     </table>
                 </section>
-                
 			</div>
 		</div>
 
@@ -686,9 +663,9 @@
 
                 menu: {
                     width: 'normal',
-                    numbers: true,
-                    themes: true,
-                    transitions: true,
+                    numbers: false,
+                    themes: false,
+                    transitions: false,
      //               custom: [
    //                     {
   //                          title: 'Links',

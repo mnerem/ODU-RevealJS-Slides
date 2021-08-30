@@ -123,56 +123,58 @@
                         <table>
                             <td>
                                 <!--Sliders table -->
-                                <div class="mathbox">
-                                <table border="0">
-                                    <tr>
-                                        <td style='border:none'>15% Lab:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="Lab_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:none'>20% Reading:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="Par_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:none'>20% Homework:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="HW_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:none'>15% Test 1:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="T1_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:none'>15% Test 2:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="T2_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:none'>15% Test 3:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="T3_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:none'>15% Final Exam:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="FE_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                </table>
-                                The lowest test grade is dropped!
-                                                    <p>
-                                <b>Course Grade =  <span id=CourseGrade></span></b>
-                                                        </p>
-                                </div>
+                                <font size="6">
+                                    <div class="mathbox">
+                                    <table border="0">
+                                        <tr>
+                                            <td style='border:none'>15% Lab:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="Lab_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>20% Reading:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="Par_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>20% Homework:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="HW_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>15% Test 1:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="T1_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>15% Test 2:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="T2_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>15% Test 3:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="T3_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>15% Final Exam:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="FE_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    The lowest test grade is dropped!
+                                                        <p>
+                                    <b>Course Grade =  <span id=CourseGrade></span></b>
+                                                            </p>
+                                    </div>
+                                </font>
                             </td>
                             <td>
                                 This is the formula used to calculate your grade.
@@ -314,7 +316,7 @@
                     <table>
                         <tr>
                             <td>
-                                <font size="6">
+                                <font size="5">
                                     <table border="1" class="dataframe" style="width:400px">
                                   <thead>
                                     <tr style="text-align: right;">
@@ -689,6 +691,7 @@
                     numbers: true,
                     themes: true,
                     transitions: true,
+                    numbers: false,
      //               custom: [
    //                     {
   //                          title: 'Links',

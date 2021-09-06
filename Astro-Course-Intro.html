@@ -54,7 +54,7 @@
                                 <table>
                                     <tbody>
                                       <tr>
-                                        <td class="tg-km2t"><b>Instructor HELLO</b>:</td>
+                                        <td class="tg-km2t"><b>Instructor</b>:</td>
                                         <td class="tg-zv4m">Dr. Perry Nerem</td>
                                       </tr>
                                       <tr>
@@ -123,56 +123,58 @@
                         <table>
                             <td>
                                 <!--Sliders table -->
-                                <div class="mathbox">
-                                <table border="0">
-                                    <tr>
-                                        <td style='border:none'>15% Lab:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="Lab_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:none'>20% Reading:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="Par_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:none'>20% Homework:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="HW_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:none'>15% Test 1:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="T1_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:none'>15% Test 2:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="T2_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:none'>15% Test 3:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="T3_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style='border:none'>15% Final Exam:</td>
-                                        <td style='border:none'>
-                                        <input type=range min=0 max=100 value=100 step=.1 id="FE_Slider"/><span></span><br>
-                                        </td>
-                                    </tr>
-                                </table>
-                                The lowest test grade is dropped!
-                                                    <p>
-                                <b>Course Grade =  <span id=CourseGrade></span></b>
-                                                        </p>
-                                </div>
+                                <font size="7">
+                                    <div class="mathbox">
+                                    <table border="0">
+                                        <tr>
+                                            <td style='border:none'>15% Lab:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="Lab_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>20% Reading:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="Par_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>20% Homework:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="HW_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>15% Test 1:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="T1_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>15% Test 2:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="T2_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>15% Test 3:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="T3_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='border:none'>15% Final Exam:</td>
+                                            <td style='border:none'>
+                                            <input type=range min=0 max=100 value=100 step=.1 id="FE_Slider"/><span></span><br>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    The lowest test grade is dropped!
+                                                        <p>
+                                    <b>Course Grade =  <span id=CourseGrade></span></b>
+                                                            </p>
+                                    </div>
+                                </font>
                             </td>
                             <td>
                                 This is the formula used to calculate your grade.
@@ -240,7 +242,7 @@
                         </div>
                         
                         <br>
-                        <a href="#/sync-labs" class="r-frame">Synchronous (online)</a>
+                        <a href="#/sync-labs" class="r-frame">Synchronous</a>
                         <p></p>
                         <br>
                         <p>
@@ -314,7 +316,7 @@
                     <table>
                         <tr>
                             <td>
-                                <font size="6">
+                                <font size="5">
                                     <table border="1" class="dataframe" style="width:400px">
                                   <thead>
                                     <tr style="text-align: right;">
@@ -408,25 +410,20 @@
                                 <table border="1" class="dataframe">
                                   <thead>
                                     <tr style="text-align: right;">
-                                      <th>Date</th>
                                       <th>Test</th>
                                     </tr>
                                   </thead>
                                   <tbody>
                                     <tr>
-                                      <td>Tue Sep 28</td>
                                       <td>Test 1 (Ch 1-7)</td>
                                     </tr>
                                     <tr>
-                                      <td>Tue Oct 26</td>
                                       <td>Test 2 (Ch 8-15)</td>
                                     </tr>
                                     <tr>
-                                      <td>Tue Nov 23</td>
                                       <td>Test 3 (Ch 16-25)</td>
                                     </tr>
                                     <tr>
-                                      <td>Tue Dec 14</td>
                                       <td>Final Exam</td>
                                     </tr>
                                   </tbody>
@@ -440,6 +437,25 @@
                         </tr>
                     </table>
                 </section>
+                
+                <!--Calendar iframe-background-->
+                <section>
+                    <section><h2 class="overl">Class Calendar</h2>
+                        <p><br><a href="#/MW-calendar" class="r-frame">MW Calendar</a></p>
+                        <p><br><a href="#/TR-calendar" class="r-frame">TR Calendar</a></p>
+			    <p><br><a href="#/Online-calendar" class="r-frame">Online Calendar</a></p>
+                    </section>
+                    <section id="MW-calendar" data-background-iframe="https://calendar.google.com/calendar/embed?src=c_aaaq91pmjpi4eb9gjj4hpitu5o%40group.calendar.google.com&ctz=America%2FNew_York"
+                             data-background-interactive>
+                    </section>
+                    <section id="TR-calendar" data-background-iframe="https://calendar.google.com/calendar/embed?src=c_srrsk73ecblebc23rhil8apdic%40group.calendar.google.com&ctz=America%2FNew_York"
+                             data-background-interactive>
+                    </section>
+                    <section id="Online-calendar" data-background-iframe="https://calendar.google.com/calendar/embed?src=c_9uca0h4r4i7qsvdj85q0l482hk%40group.calendar.google.com&ctz=America%2FNew_York"
+                             data-background-interactive>
+                    </section>
+                </section>
+                    
                 
                 <!--Math review-->
                 <section>
@@ -689,6 +705,7 @@
                     numbers: true,
                     themes: true,
                     transitions: true,
+                    numbers: false,
      //               custom: [
    //                     {
   //                          title: 'Links',

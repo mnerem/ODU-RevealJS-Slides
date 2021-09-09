@@ -3,6 +3,7 @@
 - [ODU Astro Voyager 1 distance problem](Astro-Voyager-1-problem.html)
 - [ODU PHYS 232 Intro Slides](PHYS232-Course-Intro.html)
 - [ODU PHYS 232 Sep 7](PHYS232-09-07.html)
+- [ODU PHYS 232 Sep 9](PHYS232-09-09.html)
 
 <p>
 Slides made using reveal.js.

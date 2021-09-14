@@ -5,6 +5,7 @@
 - [ODU PHYS 232 Sep 7](PHYS232-09-07.html)
 - [ODU PHYS 232 Sep 9](PHYS232-09-09.html)
 - [ODU PHYS 232 Sep 14](PHYS232-09-14.html)
+- [ODU PHYS 232 Sep 16](PHYS232-09-16.html)
 
 <p>
 Slides made using reveal.js.

@@ -7,6 +7,7 @@
 - [ODU PHYS 232 Sep 9](PHYS232-09-09.html)
 - [ODU PHYS 232 Sep 14](PHYS232-09-14.html)
 - [ODU PHYS 232 Sep 16](PHYS232-09-16.html)
+- [WSFF Discovery of Extra-Galactic Planet](WSFF-Extra-Galactic-Planet.html)
 
 <p>
 Slides made using reveal.js.
